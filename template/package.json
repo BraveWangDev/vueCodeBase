@@ -119,7 +119,7 @@
     "webpack-merge": "^4.1.0",
     {{#if_eq preCSS "scss"}}
     "node-sass": "^4.9.0",
-    "sass-loader": "^7.0.1",
+    "sass-loader": "^7.0.1"
     {{/if_eq}}
     {{#if_eq preCSS "less"}}
     "less-loader": "^4.1.0"
