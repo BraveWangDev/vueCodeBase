@@ -116,7 +116,14 @@
     "portfinder": "^1.0.13",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1",
-    "webpack-merge": "^4.1.0"
+    "webpack-merge": "^4.1.0",
+    {{#if_eq preCSS "scss"}}
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    {{/if_eq}}
+    {{#if_eq preCSS "less"}}
+    "less-loader": "^4.1.0"
+    {{/if_eq}}
   },
   "engines": {
     "node": ">= 6.0.0",

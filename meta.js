@@ -31,7 +31,7 @@ module.exports = {
       return templateVersion
     },
   },
-  
+
   prompts: {
     name: {
       when: 'isNotTest',
@@ -156,6 +156,29 @@ module.exports = {
         },
       ],
     },
+
+      preCSS: {
+          when: 'isNotTest',
+          type: 'list',
+          message: 'Pick a CSS pre-processor',
+          choices: [
+              {
+                  name: 'scss (https://sass-lang.com/)',
+                  value: 'scss',
+                  short: 'scss'
+              },
+              {
+                  name: 'less (http://lesscss.org/)',
+                  value: 'less',
+                  short: 'less'
+              },
+              {
+                  name: 'none (configure yourself)',
+                  value: 'none',
+                  short: 'none'
+              }
+          ]
+      },
   },
   filters: {
     '.eslintrc.js': 'lint',
