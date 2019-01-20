@@ -179,6 +179,28 @@ module.exports = {
               }
           ]
       },
+      buildType: {
+          when: 'isNotTest',
+          type: 'list',
+          message: 'Build Framework Type?',
+          choices: [
+              {
+                  name: 'pc',
+                  value: 'pc',
+                  short: 'pc'
+              },
+              {
+                  name: 'app',
+                  value: 'app',
+                  short: 'app'
+              },
+              {
+                  name: 'manager',
+                  value: 'manager',
+                  short: 'manager'
+              }
+          ]
+      },
   },
   filters: {
     '.eslintrc.js': 'lint',
