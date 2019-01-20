@@ -156,51 +156,28 @@ module.exports = {
         },
       ],
     },
-
-      preCSS: {
-          when: 'isNotTest',
-          type: 'list',
-          message: 'Pick a CSS pre-processor',
-          choices: [
-              {
-                  name: 'scss (https://sass-lang.com/)',
-                  value: 'scss',
-                  short: 'scss'
-              },
-              {
-                  name: 'less (http://lesscss.org/)',
-                  value: 'less',
-                  short: 'less'
-              },
-              {
-                  name: 'none (configure yourself)',
-                  value: 'none',
-                  short: 'none'
-              }
-          ]
-      },
-      buildType: {
-          when: 'isNotTest',
-          type: 'list',
-          message: 'Build Framework Type?',
-          choices: [
-              {
-                  name: 'pc',
-                  value: 'pc',
-                  short: 'pc'
-              },
-              {
-                  name: 'app',
-                  value: 'app',
-                  short: 'app'
-              },
-              {
-                  name: 'manager',
-                  value: 'manager',
-                  short: 'manager'
-              }
-          ]
-      },
+    preCSS: {
+        when: 'isNotTest',
+        type: 'list',
+        message: 'Pick a CSS pre-processor',
+        choices: [
+            {
+                name: 'scss (https://sass-lang.com/)',
+                value: 'scss',
+                short: 'scss'
+            },
+            {
+                name: 'less (http://lesscss.org/)',
+                value: 'less',
+                short: 'less'
+            },
+            {
+                name: 'none (configure yourself)',
+                value: 'none',
+                short: 'none'
+            }
+        ]
+    }
   },
   filters: {
     '.eslintrc.js': 'lint',
